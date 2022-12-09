@@ -1,0 +1,31 @@
+        -:    0:Source:D:/Progs/labs_for_a_i/HW1/decryption.cpp
+        -:    0:Graph:D:\Progs\labs_for_a_i\HW1\cmake-build-debug-coverage\CMakeFiles\HW1.dir\decryption.cpp.gcno
+        -:    0:Data:D:\Progs\labs_for_a_i\HW1\cmake-build-debug-coverage\CMakeFiles\HW1.dir\decryption.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by GIGABYTE on 30.11.2022.
+        -:    3://
+        -:    4:
+        -:    5:#include "header.hpp"
+        -:    6:
+function _Z10decryptionRKiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:    7:void decryption(const int& key, const std::string& file_name) {
+    #####:    8:    srand(key);
+    %%%%%:    8-block  0
+call    0 never executed
+    #####:    9:    std::fstream file;
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   10:    file.open(file_name);
+    %%%%%:   10-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:   11:
+    #####:   12:}
+    %%%%%:   12-block  0
+call    0 never executed
+    $$$$$:   12-block  1
+call    1 never executed

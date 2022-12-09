@@ -1,0 +1,3 @@
+D:/Progs/labs_for_a_i/HW1/cmake-build-debug-coverage/CMakeFiles/HW1.dir
+D:/Progs/labs_for_a_i/HW1/cmake-build-debug-coverage/CMakeFiles/edit_cache.dir
+D:/Progs/labs_for_a_i/HW1/cmake-build-debug-coverage/CMakeFiles/rebuild_cache.dir

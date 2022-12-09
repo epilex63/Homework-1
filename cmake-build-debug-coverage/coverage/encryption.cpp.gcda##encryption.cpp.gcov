@@ -1,0 +1,153 @@
+        -:    0:Source:D:/Progs/labs_for_a_i/HW1/encryption.cpp
+        -:    0:Graph:D:\Progs\labs_for_a_i\HW1\cmake-build-debug-coverage\CMakeFiles\HW1.dir\encryption.cpp.gcno
+        -:    0:Data:D:\Progs\labs_for_a_i\HW1\cmake-build-debug-coverage\CMakeFiles\HW1.dir\encryption.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by GIGABYTE on 23.11.2022.
+        -:    3://
+        -:    4:
+        -:    5:#include "header.hpp"
+        -:    6:
+function _Z10encryptionRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKiS6_ called 0 returned 0% blocks executed 0%
+    #####:    7:void encryption(const std::string &message, const int &key, const std::string &file_name) {
+    #####:    8:    srand(key);
+    %%%%%:    8-block  0
+call    0 never executed
+    #####:    9:    std::string result;
+call    0 never executed
+    #####:   10:    std::string message_cor = message;
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   11:    if (message.size() % 2 != 0) {
+    %%%%%:   11-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   12:        message_cor += static_cast<char>(0);
+    %%%%%:   12-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   13:    }
+    #####:   14:    for (unsigned int i = 0; i < message.size() / 2; ++i) {
+    %%%%%:   14-block  0
+    %%%%%:   14-block  1
+    %%%%%:   14-block  2
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   15:        std::bitset<16> block(
+    #####:   16:                std::bitset<8>(message_cor[i * 2]).to_string() + std::bitset<8>(message_cor[i * 2 + 1]).to_string());
+    %%%%%:   16-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   16-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   16-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   16-block  3
+call   10 never executed
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+    %%%%%:   16-block  4
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   16-block  5
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   16-block  6
+call   20 never executed
+call   21 never executed
+call   22 never executed
+    $$$$$:   16-block  7
+call   23 never executed
+    $$$$$:   16-block  8
+    $$$$$:   16-block  9
+call   24 never executed
+    $$$$$:   16-block 10
+    $$$$$:   16-block 11
+    $$$$$:   16-block 12
+call   25 never executed
+    $$$$$:   16-block 13
+    $$$$$:   16-block 14
+    #####:   17:        block = block << 2 | block >> 14;
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    #####:   18:        std::bitset<16> gamma(rand());
+call    0 never executed
+call    1 never executed
+    #####:   19:        block = block ^ gamma;
+call    0 never executed
+    #####:   20:        std::bitset<8> sym1, sym2;
+    #####:   21:        for (int j = 0; j < 8; ++j) {
+    %%%%%:   21-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   22:            sym1[j] = block[j];
+    %%%%%:   22-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+    #####:   23:            sym2[j] = block[j + 8];
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+        -:   24:        }
+    #####:   25:        result += static_cast<char>(sym1.to_ulong());
+    %%%%%:   25-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####:   26:        result += static_cast<char>(sym2.to_ulong());
+    %%%%%:   26-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:   27:    }
+    #####:   28:    std::ofstream file(file_name);
+    %%%%%:   28-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   29:    file.write((result).c_str(), result.size());
+    %%%%%:   29-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    #####:   30:    file.close();
+    %%%%%:   30-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   31:}
+    %%%%%:   31-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    $$$$$:   31-block  1
+call    3 never executed
+    $$$$$:   31-block  2
+call    4 never executed
+    $$$$$:   31-block  3
+call    5 never executed

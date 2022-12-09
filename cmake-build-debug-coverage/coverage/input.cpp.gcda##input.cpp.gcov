@@ -1,0 +1,121 @@
+        -:    0:Source:D:/Progs/labs_for_a_i/HW1/input.cpp
+        -:    0:Graph:D:\Progs\labs_for_a_i\HW1\cmake-build-debug-coverage\CMakeFiles\HW1.dir\input.cpp.gcno
+        -:    0:Data:D:\Progs\labs_for_a_i\HW1\cmake-build-debug-coverage\CMakeFiles\HW1.dir\input.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by GIGABYTE on 23.11.2022.
+        -:    3://
+        -:    4:
+        -:    5:#include "header.hpp"
+        -:    6:
+function main called 1 returned 100% blocks executed 13%
+        1:    7:int main(int argc, const char *argv[]) {
+        1:    8:    if ((argv[1] != "encryption") && (argv[1] != "decryption")) {
+        1:    8-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:    8-block  1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0
+        1:    9:        std::cerr << "Error: Use parameters decryption or encryption";
+        1:    9-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   10:        return 1;
+        1:   10-block  0
+        -:   11:    }
+    #####:   12:    if ((argc != 4) && (argv[1] == "encryption")) {
+    %%%%%:   12-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   12-block  1
+branch  2 never executed
+branch  3 never executed
+    #####:   13:        std::cerr << "Error: Use four parameters for encryption\n";
+    %%%%%:   13-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   14:        return 2;
+    %%%%%:   14-block  0
+        -:   15:    } else {
+    #####:   16:        if ((argc != 3) && (argv[1] == "decryption")) {
+    %%%%%:   16-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   16-block  1
+branch  2 never executed
+branch  3 never executed
+    #####:   17:            std::cerr << "Error: Use three parameters for decryption\n";
+    %%%%%:   17-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   18:            return 2;
+    %%%%%:   18-block  0
+        -:   19:        }
+        -:   20:    }
+    #####:   21:    const std::string mode = argv[1];
+    %%%%%:   21-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   21-block  1
+    #####:   22:    const std::string file_name = argv[2];
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   22-block  0
+    #####:   23:    if (mode == "encryption") {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   24:        const std::string message = argv[3];
+    %%%%%:   24-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   24-block  1
+    #####:   25:        const int key = atoi(argv[4]);
+call    0 never executed
+    #####:   26:        encryption(message, key, file_name);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   27:    } else {
+    %%%%%:   27-block  0
+call    0 never executed
+    $$$$$:   27-block  1
+call    1 never executed
+    #####:   28:        if (mode == "decryption") {
+    %%%%%:   28-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   29:            const int key = atoi(argv[3]);
+    %%%%%:   29-block  0
+call    0 never executed
+    #####:   30:            decryption(key, file_name);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   31:        }
+        -:   32:    }
+    #####:   33:    std::cout << "jopa";
+    %%%%%:   33-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   34:    return 0;
+    #####:   35:}
+    %%%%%:   35-block  0
+call    0 never executed
+call    1 never executed
+    $$$$$:   35-block  1
+call    2 never executed
+    $$$$$:   35-block  2
+call    3 never executed
